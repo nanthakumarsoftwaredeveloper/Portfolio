@@ -705,8 +705,8 @@ svg {
 
   
 
-  .container{
-    
+ .container{
+    margin-inline: 1rem;
   }
 
   .skills__content{
@@ -719,6 +719,18 @@ svg {
   .services__card{
     padding-block: 1.5rem;
   }
+
+  .contact__input{
+    padding: 1rem;
+    justify-content: center;
+    display: inline;
+
+  }
+  .contact__button{
+    
+    justify-content: center;
+  }
+  
 
   
   
