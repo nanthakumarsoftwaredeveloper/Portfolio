@@ -706,7 +706,8 @@ svg {
   
 
   .container{
-    margin-inline: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .skills__content{
