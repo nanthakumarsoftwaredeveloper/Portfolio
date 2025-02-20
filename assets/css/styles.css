@@ -563,7 +563,7 @@ svg {
 /*=============== CONTACT ===============*/
 .contact__container{
   padding-top: 1rem;
-  display: inline
+  display: grid;
   
 }
 
