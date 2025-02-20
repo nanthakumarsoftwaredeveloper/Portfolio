@@ -721,11 +721,9 @@ svg {
   }
 
   .contact__input{
-    padding: 1rem;
-    justify-content: center;
-    display: inline;
-
+    padding: 0.4rem;
   }
+
   .contact__button{
     
     justify-content: center;
