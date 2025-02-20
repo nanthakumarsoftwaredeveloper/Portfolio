@@ -488,6 +488,9 @@ svg {
   border:2px solid var(--first-color);
 }
 
+
+
+
 /*=============== PROJECTS ===============*/
 .projects{
   background-color: var(--container-color);
@@ -563,7 +566,7 @@ svg {
 /*=============== CONTACT ===============*/
 .contact__container{
   padding-top: 1rem;
-  display: grid;
+  display: grid
   
 }
 
@@ -571,8 +574,7 @@ svg {
 .contact__group{
   display: grid;
   row-gap: 1rem;
-  padding-left: 2px;
-  padding-right: 2px;
+  
   
   
 }
@@ -597,8 +599,7 @@ svg {
   height: 11rem;
   resize:none;
   margin-bottom: 2rem;
-  margin-left: 2px;
-  margin-right: 2px;
+  
   
   
 }
@@ -700,7 +701,7 @@ svg {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-@media screen and (max—width:320px){
+@media screen and (max-width:320px){
 
   
 
@@ -718,6 +719,19 @@ svg {
   .services__card{
     padding-block: 1.5rem;
   }
+
+  .contact__container{
+    padding: 0.4rem;
+    justify-content: center;
+
+  }
+  .contact__button{
+    
+    justify-content: center;
+  }
+  
+
+  
 }
 
 /* For medium devices */
@@ -751,22 +765,7 @@ svg {
   align-items: none;
 }
 
-.contact__container{
-  
-  display: grid;
-  
-}
 
-.contact__form,
-.contact__group{
-  padding-left: none;
-  padding-right: none; 
-}
-
-.contact__form textarea{
-  margin-left: none;
-  margin-right: none;
-}
 
   
 }
@@ -804,7 +803,7 @@ svg {
   .about__data{
     order: 1;
   }
-
+  
   .services__container,
   .projects__container{
     grid-template-columns: repeat(2, 352px);
