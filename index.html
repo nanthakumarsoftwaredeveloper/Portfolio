@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/Image/cropped_image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nantha kumar | Software Developer</title>
+</head>
+<body>
+    <!-- Header Section -->
+     <header>
+        <a href="#home" class="logo">Nantha Kumar</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </header>
+
+    <!-- Home Section -->
+     <section class="home" id="home">
+        <div class="home-content" id="home-content">
+            <h3>hi, Myself</h3>
+            <h1>Nantha Kumar</h1>
+            <h3>I'm a <span class="multiple-text" id="element">Software Developer</span></h3>
+            <p> Welcome to my freelance software development portfolio! I'm a passionate software developer eager to take on exciting projects and bring fresh ideas to life. With a solid foundation in M.sc(Computer Science), I'm ready to collaborate with clients to create innovative solutions.
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/nanthasoftdev/" target="_blank" style="--1:1"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.freelancer.in/u/nanthakumarnk" target="_blank" style="--1:2"><i class='bx bxs-briefcase-alt-2'></i></a>
+                <a href="https://github.com/nanthakumarsoftwaredeveloper" target="_blank" style="--1:3"><i class='bx bxl-github'></i></a>
+                <a href="https://www.upwork.com/freelancers/~01f4d8265fd2d979a6?mp_source=share" target="_blank" style="--1:4"><i class='bx bxl-upwork' ></i></a>
+            </div>
+           <a href="#" class="btn" id="home-btn" onclick="openPDF()">View CV</a>
+           <!-- View PDF -->
+    <div id="pdfModal">
+        <div id="pdfViewer">
+            <div id="header1">
+                <h3>View CV</h3>
+                <span id="closeBtn" onclick="closePDF()">&times;</span>
+            </div>
+            <div id="canvasContainer">
+                <canvas id="pdfCanvas"></canvas>
+            </div>
+            <button id="downloadBtn" onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
+        </div>
+        <div class="home-img">
+            <img src="assets/Image/Nantha_home.jpg" alt="Profile Image">
+        </div>
+     </section>
+
+     <!-- About Section Code -->
+
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/Image/Nantha_about.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a <span class="multiple-text" id="element">Software Developer</span></h3>
+            <p>My name is Nantha Kumar, and I’m a budding freelance software developer fueled by curiosity and a passion for coding. While I may be new to the field, my enthusiasm and determination are unmatched. I'm eager to dive headfirst into the world of software development, eager to learn, grow, and make a meaningful impact.
+                <br><br>With a solid foundation in M.sc(Computer Science), I'm ready to tackle exciting projects and turn ideas into reality. Whether it's web development, mobile app development, or custom software solutions, I'm up for the challenge.
+                <br><br>I believe in the power of collaboration and open communication. I'm here to listen to your needs, understand your vision, and work tirelessly to bring it to life. Let's embark on this journey together and create something remarkable!
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+     </section>
+
+     <!--==================== SKILLS ====================-->
+     
+     <section class="skills" id="skills">
+        <h2 class="heading">MY <span>Skills</span></h2>
+        <div class="wrapper">
+            <div class="box" style="--1:1">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/bxl-html5.svg" alt=""></div>
+                    <span>HTML</span>
+                </div>
+                <div class="back-face">
+                    <h2>HTML</h2>
+                    <p>HTML (HyperText Markup Language) is the standard language for structuring web pages. 
+                        It defines elements like text, images, links, and multimedia to create the foundation of websites. 
+                        HTML is essential for web development, allowing browsers to display content in an organized manner.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:2">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/bxl-css3.svg" alt=""></i></div>
+                    <span>CSS</span>
+                </div>
+                <div class="back-face">
+                    <h2>CSS</h2>
+                    <p>CSS (Cascading Style Sheets) is a styling language used to design and format web pages. 
+                        It controls the layout, colors, fonts, and responsiveness of HTML elements, making websites visually appealing and user-friendly.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:3">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/bxl-javascript.svg" alt=""></i></div>
+                    <span>Java Script</span>
+                </div>
+                <div class="back-face">
+                    <h2>Java Script</h2>
+                    <p>JavaScript is a programming language used to add interactivity and dynamic behavior to web pages. It enables features like form validation, animations, real-time updates, and interactive elements, making websites more engaging and functional.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:4">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/python.png" alt=""></i></div>
+                    <span>Python</span>
+                </div>
+                <div class="back-face">
+                    <h2>Python</h2>
+                    <p>Python is a high-level, versatile programming language known for its simplicity and readability. It is widely used in web development, data science, automation, artificial intelligence, and more due to its extensive libraries and ease of use.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:5">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/bxl-java.svg" alt=""></i></div>
+                    <span>JAVA</span>
+                </div>
+                <div class="back-face">
+                    <h2>JAVA</h2>
+                    <p>Java is a high-level, object-oriented programming language known for its platform independence ("Write Once, Run Anywhere"). It is widely used for web applications, mobile apps (Android), enterprise software, and backend development.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:6">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/csharp.png" alt=""></i></div>
+                    <span>C#</span>
+                </div>
+                <div class="back-face">
+                    <h2>C#</h2>
+                    <p>C# (C-Sharp) is a modern, object-oriented programming language developed by Microsoft. It is widely used for building desktop applications, web applications, game development (with Unity), and enterprise software.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:7">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/bxl-php.svg" alt=""></i></div>
+                    <span>PHP</span>
+                </div>
+                <div class="back-face">
+                    <h2>PHP</h2>
+                    <p>PHP (Hypertext Preprocessor) is a server-side scripting language used for web development. It is commonly used to create dynamic websites, manage databases, and build backend systems for web applications.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:8">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/api.png" alt=""></i></div>
+                    <span>API</span>
+                </div>
+                <div class="back-face">
+                    <h2>API</h2>
+                    <p>API (Application Programming Interface) is a set of rules that allows different software applications to communicate with each other. It enables data exchange between systems, such as web services, databases, and third-party applications.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:9">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/django.png" alt=""></i></div>
+                    <span>Django</span>
+                </div>
+                <div class="back-face">
+                    <h2>Django</h2>
+                    <p>Django is a high-level Python web framework used for building secure and scalable web applications. It follows the MVC (Model-View-Controller) pattern, simplifies database management, and includes built-in features like authentication and an admin panel.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:10">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/flutter_img.png" alt=""></i></div>
+                    <span>Flutter</span>
+                </div>
+                <div class="back-face">
+                    <h2>Flutter</h2>
+                    <p>Flutter is an open-source UI toolkit by Google for building cross-platform applications from a single codebase. It uses the Dart programming language and provides a fast, expressive, and flexible framework for creating mobile, web, and desktop apps.</p>
+                </div>
+            </div>
+            <div class="box" style="--1:11">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/android.png" alt=""></i></div>
+                    <span>Android Studio</span>
+                </div>
+                <div class="back-face">
+                    <h2>Android Studio</h2>
+                    <p>Android Studio is the official Integrated Development Environment (IDE) for Android app development. It provides tools for coding, debugging, testing, and building Android applications using Java, Kotlin, or Flutter (Dart).</p>
+                </div>
+            </div>
+            <div class="box" style="--1:12">
+                <div class="front-face">
+                    <div class="icon"><img src="assets/svg/MySql.png" alt=""></i></div>
+                    <span>MySQL</span>
+                </div>
+                <div class="back-face">
+                    <h2>MySQL</h2>
+                    <p>MySQL is an open-source relational database management system (RDBMS) used to store and manage structured data. It is widely used in web applications for handling large-scale databases efficiently with SQL (Structured Query Language).</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Services Section Code  -->
+
+     <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="grid">
+            <div class="card-design" style="--1:1">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/web developer.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">web developer</h2>
+                        <p class="description">Web development involves creating websites and web applications, covering both frontend and backend development. <span class="extra-content">Frontend focuses on user experience using HTML, CSS, and JavaScript, while backend handles server-side logic, databases, and authentication with technologies like Python, PHP, and Node.js. Full-stack development combines both. Websites are hosted using services like AWS and Google Cloud, with security measures like HTTPS and SSL ensuring data protection.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:2">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/mobile app developer.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">App development</h2>
+                        <p class="description">Mobile app development is the process of creating applications for smartphones and tablets, using technologies like Flutter, Swift, and Java. <span class="extra-content">It involves frontend UI design, backend integration, database management, and API communication to ensure functionality and user experience. Apps can be developed natively for Android and iOS or using cross-platform frameworks. Deployment is done through app stores like Google Play and the Apple App Store, with security and performance optimization playing a key role.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:3">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/database management.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Database management</h2>
+                        <p class="description">Database management involves storing, organizing, and retrieving data efficiently using database management systems like MySQL, PostgreSQL, MongoDB, and Firebase. <span class="extra-content">It ensures data integrity, security, and performance optimization through indexing, queries, and backup strategies. Database management is crucial for web and mobile applications, enabling smooth data handling, user authentication, and real-time processing while ensuring protection against data loss and unauthorized access.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:4">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/API development.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">API development</h2>
+                        <p class="description">API development and integration involve designing and managing interfaces that enable seamless communication between software systems. <span class="extra-content">Using RESTful or GraphQL architectures, APIs facilitate data exchange while security measures like OAuth, JWT, and API keys ensure protection. They integrate third-party services like payment gateways and cloud storage, enhancing functionality. Proper documentation and versioning help maintain and scale APIs efficiently.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:5">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/Software testing.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Software testing</h2>
+                        <p class="description">Software testing and debugging ensure applications run smoothly by identifying and fixing errors. <span class="extra-content">Testing methods like unit, integration, and automated testing verify functionality, performance, and security. Debugging involves analyzing and resolving code issues to improve stability and user experience. Effective testing prevents failures, enhances reliability, and ensures a high-quality product.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:6">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/DevOps.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">DevOps</h2>
+                        <p class="description">DevOps and deployment streamline software development by automating build, testing, and deployment processes. <span class="extra-content">Using tools like CI/CD pipelines, Docker, and Kubernetes, DevOps ensures faster and more reliable software delivery. Deployment involves hosting applications on cloud platforms like AWS, Google Cloud, and Azure, optimizing performance, security, and scalability. Continuous monitoring and updates help maintain system stability and efficiency.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-design" style="--1:7">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/services/Maintenance.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Maintenance</h2>
+                        <p class="description">Maintenance and support ensure software remains functional, secure, and up to date after deployment. <span class="extra-content">This includes bug fixes, performance optimization, security patches, and feature enhancements. Regular updates improve user experience, while monitoring and troubleshooting help prevent downtime. Effective maintenance ensures long-term stability and scalability of applications.</span> </p>
+                        <button class="view-btn">view more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Certificate Section code  -->
+      
+     
+        <h2 class="heading_certificate">MY <span>Certificates</span></h2>
+         
+             <!-- Page 1: Image Gallery -->
+            <div id="page1" class="page-section">
+                <div class="image-gallery">
+                    <img src="assets/Certificates/certificate_1.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_1.jpg')">
+                    <img src="assets/Certificates/certificate_2.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_2.jpg')">
+                    <img src="assets/Certificates/certificate_3.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_3.jpg')">
+                    <img src="assets/Certificates/certificate_4.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_4.jpg')">
+                    <img src="assets/Certificates/certificate_5.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_5.jpg')">
+                    <img src="assets/Certificates/certificate_6.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_6.jpg')">
+                    <img src="assets/Certificates/certificate_7.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_7.jpg')">
+                    <img src="assets/Certificates/certificate_8.jpg" class="gallery-item" onclick="openPage2('assets/Certificates/certificate_8.jpg')">
+                    
+                </div>
+            </div>
+
+            <!-- Page 2: Fullscreen Popup -->
+            <div id="page2" class="page-section">
+                <span class="close-btn_galary" onclick="closePage2()">&times;</span>
+                <img class="enlarged-image" id="displayImage">
+                
+            </div>
+         
+     
+
+    
+
+    <!-- section code  -->
+     <div class="project" id="project">
+        <h2 class="heading">My <span>projects</span></h2>
+
+        <div class="container_projects" id="main-content">
+            <div class="divider">
+                <button class="card_projects" onclick="project(this.href); return false;">
+                    <img class="project_icon" src="assets/svg/sample.png" alt="">
+                    Sample Project</button>
+            </div>
+            <div class="divider">
+                <button class="card_projects"  onclick="project_demo(this.href); return false;">
+                    <img class="project_icon" src="assets/svg/demo.png" alt="">
+                    Demo Project</button>
+            </div>
+            
+        </div>
+    
+        <!-- Popup Container -->
+        <div id="popup" class="popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <iframe id="popup-frame"></iframe>
+        </div>
+     </div>
+
+        
+
+     
+
+     <!-- Contact Section Code  -->
+
+     <section class="contact" id="contact">
+
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="" class="contact__form" id="contact-form">
+            <div class="input-box">
+                <input type="text" name="user_name" placeholder="full Name" required >
+                <input type="email" name="user_email" placeholder="Email Address" required>
+            </div>
+
+            <textarea name="user_message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <button type="submit" value="Send Message" class="button btn">
+                Send Message
+             </button>
+            
+        </form>
+     </section>
+
+     <!-- Footer Section Code  -->
+
+     <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/share/2Ts7DKRjiHNWczFx/?mibextid=qi2Omg" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/freaky_nantha/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/Nanthakumar_ms" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <p class="copyright">
+            &copy; Nantha Kumar | <i class='bx bx-support' onclick="easter_egg()"></i> Thanks for visiting.
+        </p>
+     </footer>
+
+     <script src="assets/Js/cdnjs.js"></script>
+     <script src="assets/Js/sweetalert2.js"></script>
+    <script src="assets/Js/typed.umd.js"></script>
+    <script
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+    <script src="assets/Js/scrollreveal.min.js"></script>
+     <script src="assets/Js/script.js"></script>
+</body>
+</html>
