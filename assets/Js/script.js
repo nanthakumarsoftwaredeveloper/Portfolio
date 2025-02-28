@@ -307,3 +307,17 @@ function easter_egg() {
     
 }
 
+
+//js
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide preloader and show content when page is fully loaded
+    var preloader = document.getElementById("preloader");
+    var content = document.getElementById("content");
+  
+    window.addEventListener("load", function() {
+      preloader.style.display = "none";
+      content.style.display = "block";
+    });
+    
+  });
+
