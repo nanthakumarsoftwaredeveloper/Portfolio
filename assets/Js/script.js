@@ -309,15 +309,30 @@ function easter_egg() {
 
 
 //js
-document.addEventListener("DOMContentLoaded", function() {
-    // Hide preloader and show content when page is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
     var preloader = document.getElementById("preloader");
-    var content = document.getElementById("content");
-  
-    window.addEventListener("load", function() {
-      preloader.style.display = "none";
-      content.style.display = "block";
-    });
-    
-  });
+    var homeSection = document.getElementById("home"); // Target the home section
+
+    // Check if IntersectionObserver is supported
+    if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        // Hide the preloader when home section is fully loaded
+                        preloader.style.display = "none";
+                    }
+                });
+            },
+            { threshold: 1.0 } // Trigger only when 100% of the section is visible
+        );
+
+        observer.observe(homeSection);
+    } else {
+        // Fallback if IntersectionObserver is not supported
+        window.addEventListener("load", function () {
+            preloader.style.display = "none";
+        });
+    }
+});
 
